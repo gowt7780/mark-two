@@ -10,7 +10,7 @@ var score = 0;
 function quiz(question, answer){
 var userAnswer = readlineSync.question(question);
 
-if (userAnswer == answer) {
+if (userAnswer.toUpperCase() === answer.toUpperCase()) {
 console.log("correct! ");
 score  ++;
 }
@@ -36,7 +36,7 @@ var questions = [
    },
    {
      question:"What is the capital of sikkkim? ",
-     answer:"GANGTOK"
+     answer:"gangtok"
    },
 
   
@@ -58,7 +58,7 @@ var questions = [
   },
   {
     question:"Who is the CM of TELENGANA? ",
-    answer:"KCR"
+    answer:"kcr"
   },
 ];
 for(var i=0; i<questions.length; i++){
