@@ -5,7 +5,7 @@ console.log("Each round 3 Questions");
 var readlineSync = require("readline-sync");
 var userName = readlineSync.question("What is your name? ")
 console.log("WELCOME TO THE QUIZ  "+userName+"!");
-console.log("NOTE:Enter the answers in capitals");
+console.log("Note:- Correct Answer : +1,Wrong Answer : -1 ");
 var score = 0;
 function quiz(question, answer){
 var userAnswer = readlineSync.question(question);
@@ -19,7 +19,7 @@ console.log("wrong! ");
 score --;
 }
 console.log("your score is ",score);
-console.log("------------------");}
+console.log("----------------------");}
 
 console.log("   ROUND 1   ")
 var questions = [
